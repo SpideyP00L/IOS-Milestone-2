@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eTL-cl-JeF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eTL-cl-JeF">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -126,7 +126,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bahamas Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="QIm-fw-hPX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bahamas 2" translatesAutoresizingMaskIntoConstraints="NO" id="QIm-fw-hPX">
                                 <rect key="frame" x="211" y="170" width="127" height="128"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bahamas Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="hGK-LN-7nN">
@@ -248,7 +248,7 @@
                                     <constraint firstAttribute="height" constant="128" id="nNB-ve-zxU"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cuba Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="LYI-Tl-2yH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caribbean 2" translatesAutoresizingMaskIntoConstraints="NO" id="LYI-Tl-2yH">
                                 <rect key="frame" x="220" y="167" width="128" height="128"/>
                             </imageView>
                         </subviews>
@@ -355,7 +355,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Caribbean Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="ptP-5O-Hl2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cuba 2" translatesAutoresizingMaskIntoConstraints="NO" id="ptP-5O-Hl2">
                                 <rect key="frame" x="227" y="170" width="135" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="z3g-HS-jBC"/>
@@ -453,47 +453,56 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sampler Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="bDB-za-VFe">
-                                <rect key="frame" x="76" y="115" width="241" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="cBX-Rl-gIQ"/>
-                                </constraints>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-Nr-Aj3">
                                 <rect key="frame" x="142" y="379" width="240" height="133"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="133" id="Aip-AH-Qc6"/>
+                                    <constraint firstAttribute="height" constant="133" id="W13-sU-gcP"/>
                                 </constraints>
                                 <string key="text">Sampler cruises are often designed to give you a taste of what a particular cruise line or ship has to offer. These short cruises might visit a nearby port or include activities and entertainment on the ship without extensive port stops.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cuba 2" translatesAutoresizingMaskIntoConstraints="NO" id="Ree-tb-ivq">
+                                <rect key="frame" x="183" y="161" width="135" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="dfb-gY-Zae"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sampler Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="bDB-za-VFe">
+                                <rect key="frame" x="29" y="161" width="137" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="h6p-GK-bbd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="goH-ue-scS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8xh-Di-2qR" firstAttribute="top" secondItem="goH-ue-scS" secondAttribute="top" constant="34" id="1KE-lr-1pF"/>
-                            <constraint firstItem="6ha-O0-atv" firstAttribute="leading" secondItem="4zO-ul-Nmu" secondAttribute="leading" id="3Lz-Je-L4J"/>
-                            <constraint firstItem="bDB-za-VFe" firstAttribute="top" secondItem="8xh-Di-2qR" secondAttribute="bottom" constant="51" id="4E4-vm-QQa"/>
-                            <constraint firstItem="goH-ue-scS" firstAttribute="trailing" secondItem="A2p-Nr-Aj3" secondAttribute="trailing" constant="11" id="6sT-DF-re0"/>
-                            <constraint firstItem="6ha-O0-atv" firstAttribute="leading" secondItem="goH-ue-scS" secondAttribute="leading" constant="142" id="7Tt-S8-kB9"/>
-                            <constraint firstItem="goH-ue-scS" firstAttribute="bottom" secondItem="4zO-ul-Nmu" secondAttribute="bottom" constant="67" id="8sm-oP-XpS"/>
-                            <constraint firstItem="8xh-Di-2qR" firstAttribute="centerX" secondItem="bqI-yv-P5I" secondAttribute="centerX" id="DCX-db-cNA"/>
-                            <constraint firstItem="6ha-O0-atv" firstAttribute="top" secondItem="SCF-XR-DzV" secondAttribute="bottom" constant="52" id="I4J-os-oVn"/>
-                            <constraint firstItem="A2p-Nr-Aj3" firstAttribute="top" secondItem="bqI-yv-P5I" secondAttribute="top" constant="379" id="Rgi-OV-mU3"/>
-                            <constraint firstItem="SCF-XR-DzV" firstAttribute="leading" secondItem="TdM-OV-Oga" secondAttribute="trailing" constant="30" id="VGY-iZ-Wwi"/>
-                            <constraint firstItem="bb5-eh-EBa" firstAttribute="leading" secondItem="bqI-yv-P5I" secondAttribute="leadingMargin" id="Y1p-jy-AJd"/>
-                            <constraint firstItem="bb5-eh-EBa" firstAttribute="leading" secondItem="TdM-OV-Oga" secondAttribute="leading" id="aeM-eZ-abR"/>
-                            <constraint firstItem="9zB-Li-5bk" firstAttribute="top" secondItem="TdM-OV-Oga" secondAttribute="bottom" constant="76" id="fu7-IC-0oE"/>
-                            <constraint firstItem="bDB-za-VFe" firstAttribute="leading" secondItem="goH-ue-scS" secondAttribute="leading" constant="76" id="gSj-Sg-wug"/>
-                            <constraint firstItem="TdM-OV-Oga" firstAttribute="leading" secondItem="9zB-Li-5bk" secondAttribute="leading" id="h9B-La-A7T"/>
-                            <constraint firstItem="4zO-ul-Nmu" firstAttribute="top" secondItem="6ha-O0-atv" secondAttribute="bottom" constant="8" id="k4g-Gn-VRp"/>
-                            <constraint firstItem="bb5-eh-EBa" firstAttribute="top" secondItem="bqI-yv-P5I" secondAttribute="top" constant="386" id="koO-Lq-GeN"/>
-                            <constraint firstItem="8xh-Di-2qR" firstAttribute="centerX" secondItem="bDB-za-VFe" secondAttribute="centerX" id="m7K-P7-gSL"/>
-                            <constraint firstItem="A2p-Nr-Aj3" firstAttribute="leading" secondItem="6ha-O0-atv" secondAttribute="leading" id="t0f-el-MGv"/>
-                            <constraint firstItem="TdM-OV-Oga" firstAttribute="baseline" secondItem="SCF-XR-DzV" secondAttribute="baseline" id="xv4-xL-BhT"/>
+                            <constraint firstItem="A2p-Nr-Aj3" firstAttribute="leading" secondItem="6ha-O0-atv" secondAttribute="leading" id="0cl-Lo-3bz"/>
+                            <constraint firstItem="SCF-XR-DzV" firstAttribute="leading" secondItem="TdM-OV-Oga" secondAttribute="trailing" constant="30" id="2Z3-65-Tnm"/>
+                            <constraint firstItem="Ree-tb-ivq" firstAttribute="leading" secondItem="bDB-za-VFe" secondAttribute="trailing" constant="17" id="50F-Lf-gWr"/>
+                            <constraint firstItem="bDB-za-VFe" firstAttribute="top" secondItem="8xh-Di-2qR" secondAttribute="bottom" constant="97" id="BAN-UD-wvW"/>
+                            <constraint firstItem="4zO-ul-Nmu" firstAttribute="top" secondItem="6ha-O0-atv" secondAttribute="bottom" constant="8" id="Bfa-KV-nLk"/>
+                            <constraint firstItem="6ha-O0-atv" firstAttribute="leading" secondItem="goH-ue-scS" secondAttribute="leading" constant="142" id="Csm-5B-da3"/>
+                            <constraint firstItem="bb5-eh-EBa" firstAttribute="leading" secondItem="TdM-OV-Oga" secondAttribute="leading" id="JiY-Bb-JsI"/>
+                            <constraint firstItem="goH-ue-scS" firstAttribute="trailing" secondItem="Ree-tb-ivq" secondAttribute="trailing" constant="75" id="Jo2-qx-ORy"/>
+                            <constraint firstItem="bDB-za-VFe" firstAttribute="bottom" secondItem="Ree-tb-ivq" secondAttribute="bottom" id="Orw-bI-fOp"/>
+                            <constraint firstItem="6ha-O0-atv" firstAttribute="leading" secondItem="4zO-ul-Nmu" secondAttribute="leading" id="Ph5-Xo-aga"/>
+                            <constraint firstItem="goH-ue-scS" firstAttribute="bottom" secondItem="4zO-ul-Nmu" secondAttribute="bottom" constant="67" id="TIS-RZ-9Mb"/>
+                            <constraint firstItem="8xh-Di-2qR" firstAttribute="centerX" secondItem="bqI-yv-P5I" secondAttribute="centerX" id="Thc-5i-NPx"/>
+                            <constraint firstItem="8xh-Di-2qR" firstAttribute="top" secondItem="goH-ue-scS" secondAttribute="top" constant="34" id="U7K-Ab-1S5"/>
+                            <constraint firstItem="goH-ue-scS" firstAttribute="trailing" secondItem="A2p-Nr-Aj3" secondAttribute="trailing" constant="11" id="YMI-8D-tR0"/>
+                            <constraint firstItem="bb5-eh-EBa" firstAttribute="leading" secondItem="bqI-yv-P5I" secondAttribute="leadingMargin" id="Zxi-nf-xqy"/>
+                            <constraint firstItem="TdM-OV-Oga" firstAttribute="leading" secondItem="9zB-Li-5bk" secondAttribute="leading" id="bTy-rH-cac"/>
+                            <constraint firstItem="bDB-za-VFe" firstAttribute="leading" secondItem="goH-ue-scS" secondAttribute="leading" constant="29" id="bh9-IJ-8DS"/>
+                            <constraint firstItem="6ha-O0-atv" firstAttribute="top" secondItem="SCF-XR-DzV" secondAttribute="bottom" constant="52" id="gOv-yv-c59"/>
+                            <constraint firstItem="A2p-Nr-Aj3" firstAttribute="top" secondItem="bDB-za-VFe" secondAttribute="bottom" constant="90" id="k7A-Zd-c34"/>
+                            <constraint firstItem="bb5-eh-EBa" firstAttribute="top" secondItem="bDB-za-VFe" secondAttribute="bottom" constant="97" id="rof-5y-1sJ"/>
+                            <constraint firstItem="9zB-Li-5bk" firstAttribute="top" secondItem="TdM-OV-Oga" secondAttribute="bottom" constant="76" id="vYe-YR-biL"/>
+                            <constraint firstItem="bDB-za-VFe" firstAttribute="top" secondItem="Ree-tb-ivq" secondAttribute="top" id="veO-k4-2dP"/>
+                            <constraint firstItem="TdM-OV-Oga" firstAttribute="baseline" secondItem="SCF-XR-DzV" secondAttribute="baseline" id="yoI-JF-0Wf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mpG-iZ-hab"/>
@@ -505,7 +514,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgv-wd-VUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5263" y="-746"/>
+            <point key="canvasLocation" x="5261.8320610687024" y="-746.47887323943667"/>
         </scene>
         <!--Star Cruise-->
         <scene sceneID="RGP-7u-5Xa">
@@ -557,16 +566,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="2qY-J3-U3G">
-                                <rect key="frame" x="76" y="115" width="241" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="0bu-lk-aCR"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEE-GI-WRO">
                                 <rect key="frame" x="142" y="380" width="235" height="119"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="119" id="YmK-bG-tC4"/>
+                                    <constraint firstAttribute="height" constant="119" id="LMf-mc-KS2"/>
                                 </constraints>
                                 <string key="text">Singapore Penang, Malaysia
 Phuket, Thailand Langkawi, Malaysia Hong Kong, China
@@ -576,30 +579,43 @@ Danang, Vietnam</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="2qY-J3-U3G">
+                                <rect key="frame" x="27" y="162" width="145" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="sLY-ZM-Zla"/>
+                                    <constraint firstAttribute="height" constant="128" id="vne-ux-3SW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star 2" translatesAutoresizingMaskIntoConstraints="NO" id="CtO-ed-VtJ">
+                                <rect key="frame" x="180" y="162" width="145" height="128"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vu6-o3-Xbi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qEE-GI-WRO" firstAttribute="trailing" secondItem="dt6-gs-Q7W" secondAttribute="trailingMargin" id="1QI-N8-z40"/>
-                            <constraint firstItem="J1e-Sb-8o1" firstAttribute="centerX" secondItem="dt6-gs-Q7W" secondAttribute="centerX" id="2xl-m8-UM4"/>
-                            <constraint firstItem="XU1-2X-ClY" firstAttribute="leading" secondItem="MNr-pv-4YN" secondAttribute="leading" id="4S1-Rr-fIU"/>
-                            <constraint firstItem="UZL-7U-2GJ" firstAttribute="leading" secondItem="dt6-gs-Q7W" secondAttribute="leadingMargin" id="6yC-wQ-sUm"/>
-                            <constraint firstItem="MfY-mS-cA3" firstAttribute="top" secondItem="kHt-M4-K6V" secondAttribute="bottom" constant="76" id="9Jg-pM-JEP"/>
-                            <constraint firstItem="MNr-pv-4YN" firstAttribute="leading" secondItem="vu6-o3-Xbi" secondAttribute="leading" constant="142" id="Bd2-dl-otu"/>
-                            <constraint firstItem="qEE-GI-WRO" firstAttribute="top" secondItem="dt6-gs-Q7W" secondAttribute="top" constant="380" id="DNX-Qb-rpE"/>
-                            <constraint firstItem="J1e-Sb-8o1" firstAttribute="centerX" secondItem="2qY-J3-U3G" secondAttribute="centerX" id="Ob1-4B-N0d"/>
-                            <constraint firstItem="UZL-7U-2GJ" firstAttribute="leading" secondItem="kHt-M4-K6V" secondAttribute="leading" id="Tl3-f1-ehh"/>
-                            <constraint firstItem="qEE-GI-WRO" firstAttribute="leading" secondItem="XU1-2X-ClY" secondAttribute="leading" id="Uk1-vk-FHf"/>
-                            <constraint firstItem="2qY-J3-U3G" firstAttribute="top" secondItem="J1e-Sb-8o1" secondAttribute="bottom" constant="49" id="W3g-1j-LKy"/>
-                            <constraint firstItem="UZL-7U-2GJ" firstAttribute="top" secondItem="dt6-gs-Q7W" secondAttribute="top" constant="387" id="WjO-nJ-6bS"/>
-                            <constraint firstItem="rE8-Ot-voj" firstAttribute="leading" secondItem="kHt-M4-K6V" secondAttribute="trailing" constant="30" id="Y4g-IF-Rt9"/>
-                            <constraint firstItem="kHt-M4-K6V" firstAttribute="leading" secondItem="MfY-mS-cA3" secondAttribute="leading" id="YV4-uI-sTJ"/>
-                            <constraint firstItem="2qY-J3-U3G" firstAttribute="leading" secondItem="vu6-o3-Xbi" secondAttribute="leading" constant="76" id="ad6-26-OJR"/>
-                            <constraint firstItem="J1e-Sb-8o1" firstAttribute="top" secondItem="vu6-o3-Xbi" secondAttribute="top" constant="36" id="asx-jT-HX2"/>
-                            <constraint firstItem="kHt-M4-K6V" firstAttribute="baseline" secondItem="rE8-Ot-voj" secondAttribute="baseline" id="bz8-tJ-COM"/>
-                            <constraint firstItem="MfY-mS-cA3" firstAttribute="baseline" secondItem="XU1-2X-ClY" secondAttribute="baseline" id="icu-QQ-6E9"/>
-                            <constraint firstItem="MNr-pv-4YN" firstAttribute="top" secondItem="XU1-2X-ClY" secondAttribute="bottom" constant="8" id="rxK-Cq-XYw"/>
-                            <constraint firstItem="vu6-o3-Xbi" firstAttribute="bottom" secondItem="MNr-pv-4YN" secondAttribute="bottom" constant="42" id="sJz-S9-oK1"/>
+                            <constraint firstItem="vu6-o3-Xbi" firstAttribute="trailing" secondItem="CtO-ed-VtJ" secondAttribute="trailing" constant="68" id="4Og-Om-YAI"/>
+                            <constraint firstItem="kHt-M4-K6V" firstAttribute="leading" secondItem="MfY-mS-cA3" secondAttribute="leading" id="5VM-Qu-Bda"/>
+                            <constraint firstItem="2qY-J3-U3G" firstAttribute="top" secondItem="CtO-ed-VtJ" secondAttribute="top" id="5ro-eZ-iEa"/>
+                            <constraint firstItem="vu6-o3-Xbi" firstAttribute="bottom" secondItem="MNr-pv-4YN" secondAttribute="bottom" constant="42" id="6Gu-24-3hd"/>
+                            <constraint firstItem="qEE-GI-WRO" firstAttribute="trailing" secondItem="dt6-gs-Q7W" secondAttribute="trailingMargin" id="6u1-J1-dq9"/>
+                            <constraint firstItem="qEE-GI-WRO" firstAttribute="top" secondItem="2qY-J3-U3G" secondAttribute="bottom" constant="90" id="7fq-TV-7pK"/>
+                            <constraint firstItem="MfY-mS-cA3" firstAttribute="baseline" secondItem="XU1-2X-ClY" secondAttribute="baseline" id="8Rz-0f-pqb"/>
+                            <constraint firstItem="UZL-7U-2GJ" firstAttribute="leading" secondItem="dt6-gs-Q7W" secondAttribute="leadingMargin" id="BFg-gb-KHV"/>
+                            <constraint firstItem="2qY-J3-U3G" firstAttribute="leading" secondItem="vu6-o3-Xbi" secondAttribute="leading" constant="27" id="J3H-5e-9DA"/>
+                            <constraint firstItem="J1e-Sb-8o1" firstAttribute="centerX" secondItem="dt6-gs-Q7W" secondAttribute="centerX" id="NDN-yp-w4T"/>
+                            <constraint firstItem="MNr-pv-4YN" firstAttribute="top" secondItem="XU1-2X-ClY" secondAttribute="bottom" constant="8" id="NlD-jl-d2Z"/>
+                            <constraint firstItem="MNr-pv-4YN" firstAttribute="leading" secondItem="vu6-o3-Xbi" secondAttribute="leading" constant="142" id="POn-4b-g8c"/>
+                            <constraint firstItem="J1e-Sb-8o1" firstAttribute="top" secondItem="vu6-o3-Xbi" secondAttribute="top" constant="36" id="XyB-46-hi7"/>
+                            <constraint firstItem="rE8-Ot-voj" firstAttribute="leading" secondItem="kHt-M4-K6V" secondAttribute="trailing" constant="30" id="ZDM-HY-sfn"/>
+                            <constraint firstItem="kHt-M4-K6V" firstAttribute="baseline" secondItem="rE8-Ot-voj" secondAttribute="baseline" id="dSp-IO-CbF"/>
+                            <constraint firstItem="UZL-7U-2GJ" firstAttribute="leading" secondItem="kHt-M4-K6V" secondAttribute="leading" id="gOo-0G-dtQ"/>
+                            <constraint firstItem="2qY-J3-U3G" firstAttribute="bottom" secondItem="CtO-ed-VtJ" secondAttribute="bottom" id="gOu-cW-mjQ"/>
+                            <constraint firstItem="MfY-mS-cA3" firstAttribute="top" secondItem="kHt-M4-K6V" secondAttribute="bottom" constant="76" id="ibs-kp-2Lw"/>
+                            <constraint firstItem="XU1-2X-ClY" firstAttribute="leading" secondItem="MNr-pv-4YN" secondAttribute="leading" id="pQu-DM-bEM"/>
+                            <constraint firstItem="CtO-ed-VtJ" firstAttribute="top" secondItem="J1e-Sb-8o1" secondAttribute="bottom" constant="96" id="pu5-bK-iFl"/>
+                            <constraint firstItem="UZL-7U-2GJ" firstAttribute="top" secondItem="2qY-J3-U3G" secondAttribute="bottom" constant="97" id="tSr-fT-CeG"/>
+                            <constraint firstItem="CtO-ed-VtJ" firstAttribute="leading" secondItem="2qY-J3-U3G" secondAttribute="trailing" constant="8" id="w57-1Z-X91"/>
+                            <constraint firstItem="qEE-GI-WRO" firstAttribute="leading" secondItem="XU1-2X-ClY" secondAttribute="leading" id="z3j-xg-7WP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dpF-pT-FkP"/>
@@ -900,15 +916,19 @@ Danang, Vietnam</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Bahamas Cruise" width="341.33334350585938" height="341.33334350585938"/>
-        <image name="Caribbean Cruise" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="Bahamas 2" width="1024" height="1024"/>
+        <image name="Bahamas Cruise" width="1024" height="1024"/>
+        <image name="Caribbean Cruise" width="1024" height="1024"/>
         <image name="Cruise_logo" width="75" height="75"/>
-        <image name="Cuba Cruise" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="Cuba Cruise" width="512" height="512"/>
         <image name="Sampler Cruise" width="341.33334350585938" height="341.33334350585938"/>
-        <image name="Star Cruise" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="Star Cruise" width="512" height="512"/>
+        <image name="caribbean 2" width="1024" height="1024"/>
+        <image name="cuba 2" width="1024" height="1024"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.badge.plus" catalog="system" width="128" height="124"/>
+        <image name="star 2" width="1024" height="1024"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "caribbean1.jpg",
+      "filename" : "_72529ec9-3d11-4725-8867-bd5afe91fecf.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "caribbean2.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "caribbean3.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
