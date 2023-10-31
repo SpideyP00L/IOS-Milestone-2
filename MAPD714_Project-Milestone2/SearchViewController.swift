@@ -2,13 +2,15 @@
 //  SearchViewController.swift
 //  MAPD714_Project-Milestone2
 //
-// Team number - 8
-// Milestone number - 2
-// Team members names- Calist Dsouza - 301359253, Ahmad Abbas - 301372338 , Jeet Panchal -
-// Submission Date - 30 October 2023
+//  Team Number: 8
+//  Milestone Number: 2
+//  Team Members: Calist Dsouza - 301359253, Ahmad Abbas - 301372338, Jeet Panchal
+//  Submission Date: 30 October 2023
 //
 
 import UIKit
+
+// MARK: - Model
 
 struct Cruise {
     let name: String
@@ -18,6 +20,8 @@ struct Cruise {
 }
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    // MARK: - Properties
 
     var cruises: [Cruise] = [
         Cruise(name: "Bahamas Cruise", price: 500, startDate: Date(), numberOfNights: 7),
@@ -29,9 +33,13 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var filteredCruises: [Cruise] = []
     
+    // MARK: - Outlets
+
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    // MARK: - View Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,8 +53,26 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         // Register the cell identifier
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        // Customize the UI design
+        customizeUI()
     }
     
+    // MARK: - UI Customization
+
+    func customizeUI() {
+        // Customize table view
+        tableView.separatorColor = .lightGray
+        tableView.tableFooterView = UIView()
+        
+        // Customize search bar
+        searchBar.searchBarStyle = .minimal
+        searchBar.placeholder = "Search Cruises"
+        searchBar.tintColor = .systemBlue
+    }
+    
+    // MARK: - Filtering Cruises
+
     // Function to filter cruises based on search text, price, start date, and number of nights
     func filterCruises(for searchText: String) {
         filteredCruises = cruises.filter { cruise in
@@ -96,30 +122,35 @@ extension SearchViewController {
         // Customize the cell to display the required information
         cell.textLabel?.text = "\(cruise.name)"
         cell.detailTextLabel?.text = "Price: $\(cruise.price) | Start Date: \(formatDate(date: cruise.startDate)) | Number of Nights: \(cruise.numberOfNights)"
+        
+        // Customize cell design
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 14)
+        cell.detailTextLabel?.numberOfLines = 0
 
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100 // Adjust this value as per your requirement
+        return 120 // Adjust this value as per your requirement
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let selectedCruise = filteredCruises[indexPath.row]
-            
-            switch selectedCruise.name {
-            case "Bahamas Cruise":
-                performSegue(withIdentifier: "ShowBahamas", sender: selectedCruise)
-            case "Caribbean Cruise":
-                performSegue(withIdentifier: "ShowCaribbean", sender: selectedCruise)
-            case "Cuba Cruise":
-                performSegue(withIdentifier: "ShowCuba", sender: selectedCruise)
-            case "Sampler Cruise":
-                performSegue(withIdentifier: "ShowSampler", sender: selectedCruise)
-            case "Star Cruise":
-                performSegue(withIdentifier: "ShowStar", sender: selectedCruise)
-            default:
-                break
-            }
+        let selectedCruise = filteredCruises[indexPath.row]
+        
+        switch selectedCruise.name {
+        case "Bahamas Cruise":
+            performSegue(withIdentifier: "ShowBahamas", sender: selectedCruise)
+        case "Caribbean Cruise":
+            performSegue(withIdentifier: "ShowCaribbean", sender: selectedCruise)
+        case "Cuba Cruise":
+            performSegue(withIdentifier: "ShowCuba", sender: selectedCruise)
+        case "Sampler Cruise":
+            performSegue(withIdentifier: "ShowSampler", sender: selectedCruise)
+        case "Star Cruise":
+            performSegue(withIdentifier: "ShowStar", sender: selectedCruise)
+        default:
+            break
         }
+    }
 }

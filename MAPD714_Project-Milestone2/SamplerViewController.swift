@@ -1,27 +1,41 @@
+// SamplerViewController.swift
+// MAPD714_Project-Milestone2
 //
-//  SamplerViewController.swift
-//  MAPD714_Project-Milestone2
-//
-//  Created by Jeet Panchal on 2023-10-31.
-//
+// Created by Jeet Panchal on 2023-10-31.
 
 import UIKit
 
 class SamplerViewController: UIViewController {
     var cruise: Cruise?
 
-    // Connect these outlets to the corresponding labels in the storyboard
+    // MARK: - Outlets
+
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var startDateLabel: UILabel!
     @IBOutlet weak var numberOfNightsLabel: UILabel!
 
+    // MARK: - View Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        setupUI()
+        displayCruiseDetails()
+    }
 
+    // MARK: - UI Setup
+
+    func setupUI() {
+        view.backgroundColor = .white
+        // Add any additional UI setup here
+    }
+
+    // MARK: - Data Display
+
+    func displayCruiseDetails() {
         if let cruise = cruise {
-            placeLabel.text = ""
+            // Update labels with cruise details
+            placeLabel.text = "The sampler cruise offers a taste of different destinations, often with shorter itineraries. It's a great option for first-time cruisers or those looking to explore multiple locations in a shorter time frame."
             priceLabel.text = "Price: $\(cruise.price)"
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd"

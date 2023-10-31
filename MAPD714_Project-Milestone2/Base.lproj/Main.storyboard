@@ -34,9 +34,8 @@
                                 <color key="textColor" red="0.035294117649999998" green="0.047058823530000002" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4S-tZ-eNP">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4S-tZ-eNP">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Home Screen" id="C11-vp-xdR"/>
                                 </items>
@@ -45,15 +44,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xVs-gG-fmk" firstAttribute="top" secondItem="AYt-8U-7QT" secondAttribute="bottom" constant="34" id="5t5-oq-Q6p"/>
+                            <constraint firstItem="xVs-gG-fmk" firstAttribute="top" secondItem="AYt-8U-7QT" secondAttribute="bottom" constant="33" id="5t5-oq-Q6p"/>
                             <constraint firstItem="tDU-1F-q5h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="71P-W3-ZA3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xVs-gG-fmk" secondAttribute="bottom" constant="328" id="E6y-Sn-mBF"/>
+                            <constraint firstItem="C4S-tZ-eNP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="K3t-HL-HRo"/>
                             <constraint firstItem="tDU-1F-q5h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="RfN-ME-2Tt"/>
                             <constraint firstItem="tDU-1F-q5h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-43" id="dJJ-Rs-URT"/>
                             <constraint firstItem="AYt-8U-7QT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="egF-ay-Ok8"/>
                             <constraint firstItem="tDU-1F-q5h" firstAttribute="centerX" secondItem="AYt-8U-7QT" secondAttribute="centerX" id="fCF-vW-B3N"/>
                             <constraint firstItem="AYt-8U-7QT" firstAttribute="top" secondItem="tDU-1F-q5h" secondAttribute="bottom" constant="33" id="fNa-EH-8lW"/>
                             <constraint firstItem="AYt-8U-7QT" firstAttribute="centerX" secondItem="xVs-gG-fmk" secondAttribute="centerX" id="iCT-mG-WcY"/>
+                            <constraint firstItem="C4S-tZ-eNP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iyR-bt-fiQ"/>
+                            <constraint firstItem="C4S-tZ-eNP" firstAttribute="centerX" secondItem="tDU-1F-q5h" secondAttribute="centerX" id="o5y-yQ-A6A"/>
                             <constraint firstItem="xVs-gG-fmk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pAN-pc-vIb"/>
                         </constraints>
                     </view>
@@ -72,70 +74,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cruise Price-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0u-E7-qfU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cruise Price-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0u-E7-qfU">
                                 <rect key="frame" x="16" y="620" width="100" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJf-tp-2rL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJf-tp-2rL">
                                 <rect key="frame" x="16" y="694" width="73" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 nights" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR3-Qp-v0b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 nights" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR3-Qp-v0b">
                                 <rect key="frame" x="142" y="693" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ 500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8X8-kY-wNP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8X8-kY-wNP">
                                 <rect key="frame" x="146" y="620" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="from 31 Oct to 7 Nov" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZp-dr-4hq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from 31 Oct to 7 Nov" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZp-dr-4hq">
                                 <rect key="frame" x="142" y="722" width="158" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bahamas Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="hGK-LN-7nN">
-                                <rect key="frame" x="76" y="170" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bahamas Cruise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUD-Qu-2xt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bahamas Cruise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUD-Qu-2xt">
                                 <rect key="frame" x="108" y="90" width="176" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CAV-NX-FFy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visiting Places-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQa-dN-w9s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visiting Places-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQa-dN-w9s">
                                 <rect key="frame" x="16" y="366" width="118" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-Tf-W9M">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-Tf-W9M">
                                 <rect key="frame" x="146" y="358" width="231" height="181"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Some common ports of call in the Bahamas include Nassau (the capital), Freeport, and private islands owned by cruise lines such as Royal Caribbean's CocoCay or Disney Cruise Line's Castaway Cay.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bahamas Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="QIm-fw-hPX">
+                                <rect key="frame" x="211" y="170" width="127" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bahamas Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="hGK-LN-7nN">
+                                <rect key="frame" x="58" y="170" width="127" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="TW8-N9-E1p"/>
+                                    <constraint firstAttribute="height" constant="128" id="wjZ-UT-SOh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A7e-Sd-xeh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hGK-LN-7nN" firstAttribute="leading" secondItem="A7e-Sd-xeh" secondAttribute="leading" constant="58" id="0IA-dr-7Co"/>
+                            <constraint firstItem="BUD-Qu-2xt" firstAttribute="centerX" secondItem="6TG-7K-n5K" secondAttribute="centerX" id="0iE-ng-Ncz"/>
+                            <constraint firstItem="hGK-LN-7nN" firstAttribute="bottom" secondItem="QIm-fw-hPX" secondAttribute="bottom" id="59R-kB-F3p"/>
+                            <constraint firstItem="oZp-dr-4hq" firstAttribute="top" secondItem="YR3-Qp-v0b" secondAttribute="bottom" constant="8" id="5Kp-Av-ErH"/>
+                            <constraint firstItem="EQa-dN-w9s" firstAttribute="leading" secondItem="6TG-7K-n5K" secondAttribute="leadingMargin" id="AP8-4N-xPy"/>
+                            <constraint firstItem="hGK-LN-7nN" firstAttribute="top" secondItem="QIm-fw-hPX" secondAttribute="top" id="FE3-Co-meL"/>
+                            <constraint firstItem="YR3-Qp-v0b" firstAttribute="leading" secondItem="oZp-dr-4hq" secondAttribute="leading" id="OPC-0V-gcz"/>
+                            <constraint firstItem="8X8-kY-wNP" firstAttribute="top" secondItem="QSq-Tf-W9M" secondAttribute="bottom" constant="81" id="PyX-1i-K4M"/>
+                            <constraint firstItem="QIm-fw-hPX" firstAttribute="leading" secondItem="hGK-LN-7nN" secondAttribute="trailing" constant="26" id="QMx-hj-OkR"/>
+                            <constraint firstItem="8X8-kY-wNP" firstAttribute="leading" secondItem="n0u-E7-qfU" secondAttribute="trailing" constant="30" id="TcW-WY-uFB"/>
+                            <constraint firstItem="YR3-Qp-v0b" firstAttribute="top" secondItem="8X8-kY-wNP" secondAttribute="bottom" constant="52" id="UcW-ls-hkd"/>
+                            <constraint firstItem="oZp-dr-4hq" firstAttribute="leading" secondItem="A7e-Sd-xeh" secondAttribute="leading" constant="142" id="Vk3-Ja-Pom"/>
+                            <constraint firstItem="A7e-Sd-xeh" firstAttribute="bottom" secondItem="QJf-tp-2rL" secondAttribute="bottom" constant="127" id="W1V-Pm-kES"/>
+                            <constraint firstItem="QSq-Tf-W9M" firstAttribute="leading" secondItem="EQa-dN-w9s" secondAttribute="trailing" constant="12" id="WJm-hA-hOc"/>
+                            <constraint firstItem="hGK-LN-7nN" firstAttribute="top" secondItem="BUD-Qu-2xt" secondAttribute="bottom" constant="50" id="aac-dg-DoH"/>
+                            <constraint firstItem="EQa-dN-w9s" firstAttribute="leading" secondItem="n0u-E7-qfU" secondAttribute="leading" id="bgO-12-tSw"/>
+                            <constraint firstItem="A7e-Sd-xeh" firstAttribute="trailing" secondItem="QIm-fw-hPX" secondAttribute="trailing" constant="55" id="cn1-VA-7xq"/>
+                            <constraint firstItem="QSq-Tf-W9M" firstAttribute="top" secondItem="hGK-LN-7nN" secondAttribute="bottom" constant="60" id="fuF-Sl-tsh"/>
+                            <constraint firstItem="n0u-E7-qfU" firstAttribute="leading" secondItem="QJf-tp-2rL" secondAttribute="leading" id="hsp-Qm-EhN"/>
+                            <constraint firstItem="QJf-tp-2rL" firstAttribute="top" secondItem="n0u-E7-qfU" secondAttribute="bottom" constant="53" id="nJb-4X-9D5"/>
+                            <constraint firstItem="QSq-Tf-W9M" firstAttribute="leading" secondItem="8X8-kY-wNP" secondAttribute="leading" id="pEh-wP-wvI"/>
+                            <constraint firstItem="EQa-dN-w9s" firstAttribute="top" secondItem="hGK-LN-7nN" secondAttribute="bottom" constant="68" id="qao-f9-bZd"/>
+                            <constraint firstItem="A7e-Sd-xeh" firstAttribute="bottom" secondItem="oZp-dr-4hq" secondAttribute="bottom" constant="99" id="vx6-bD-KJa"/>
+                            <constraint firstItem="BUD-Qu-2xt" firstAttribute="top" secondItem="A7e-Sd-xeh" secondAttribute="top" constant="90" id="wJC-Et-PrC"/>
+                            <constraint firstItem="QSq-Tf-W9M" firstAttribute="trailing" secondItem="6TG-7K-n5K" secondAttribute="trailingMargin" id="weX-UW-DPX"/>
+                            <constraint firstItem="BUD-Qu-2xt" firstAttribute="leading" secondItem="A7e-Sd-xeh" secondAttribute="leading" constant="108" id="wiN-GQ-kR8"/>
+                            <constraint firstItem="n0u-E7-qfU" firstAttribute="firstBaseline" secondItem="8X8-kY-wNP" secondAttribute="firstBaseline" id="wvn-kJ-O6n"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EtB-dl-P7Q"/>
                     <connections>
@@ -193,12 +225,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Caribbean Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="thd-id-r2g">
-                                <rect key="frame" x="76" y="167" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="S6f-M1-Iyq"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visiting Places-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1o-3D-Sxc">
                                 <rect key="frame" x="16" y="336" width="118" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -209,37 +235,50 @@
                                 <rect key="frame" x="142" y="328" width="240" height="166.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="166.66666666666663" id="vd4-GS-oEA"/>
+                                    <constraint firstAttribute="height" constant="166.66666666666663" id="sgC-GK-Uxp"/>
                                 </constraints>
                                 <string key="text">Caribbean cruises offer a wide variety of destinations, including islands in the Eastern Caribbean (e.g., St. Thomas, St. Maarten), Western Caribbean (e.g., Cozumel, Jamaica), and Southern Caribbean (e.g., Aruba, Curacao). The specific ports of call depend on the cruise itinerary.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Caribbean Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="thd-id-r2g">
+                                <rect key="frame" x="56" y="167" width="135" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="nNB-ve-zxU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cuba Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="LYI-Tl-2yH">
+                                <rect key="frame" x="220" y="167" width="128" height="128"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X6W-QT-gdH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6xm-xX-ykG" firstAttribute="top" secondItem="6dX-RR-1VV" secondAttribute="bottom" constant="76" id="0hd-uw-qQD"/>
-                            <constraint firstItem="2bR-kc-gt1" firstAttribute="top" secondItem="eHs-jB-soJ" secondAttribute="bottom" constant="52" id="309-DE-2C3"/>
-                            <constraint firstItem="thd-id-r2g" firstAttribute="centerX" secondItem="Riu-Uc-vc1" secondAttribute="centerX" id="6Ze-bh-esw"/>
-                            <constraint firstItem="eXm-hu-ATg" firstAttribute="leading" secondItem="2bR-kc-gt1" secondAttribute="leading" id="8bc-Nq-XW5"/>
-                            <constraint firstItem="6dX-RR-1VV" firstAttribute="leading" secondItem="6xm-xX-ykG" secondAttribute="leading" id="BMo-lJ-MXO"/>
-                            <constraint firstItem="thd-id-r2g" firstAttribute="leading" secondItem="X6W-QT-gdH" secondAttribute="leading" constant="76" id="Dyz-Ws-0Nd"/>
-                            <constraint firstItem="X6W-QT-gdH" firstAttribute="bottom" secondItem="epg-Pg-z4M" secondAttribute="bottom" constant="105" id="GnK-cc-8ku"/>
-                            <constraint firstItem="6dX-RR-1VV" firstAttribute="baseline" secondItem="eHs-jB-soJ" secondAttribute="baseline" id="Gtv-a6-mO9"/>
-                            <constraint firstItem="eHs-jB-soJ" firstAttribute="leading" secondItem="6dX-RR-1VV" secondAttribute="trailing" constant="31" id="N11-T7-YGY"/>
-                            <constraint firstItem="RbL-lh-n3m" firstAttribute="centerX" secondItem="thd-id-r2g" secondAttribute="centerX" id="TY1-WR-S5U"/>
-                            <constraint firstItem="thd-id-r2g" firstAttribute="top" secondItem="RbL-lh-n3m" secondAttribute="bottom" constant="55" id="VlR-bM-BMc"/>
-                            <constraint firstItem="RbL-lh-n3m" firstAttribute="top" secondItem="X6W-QT-gdH" secondAttribute="top" constant="82" id="Vr8-Z0-Snv"/>
-                            <constraint firstItem="X6W-QT-gdH" firstAttribute="trailing" secondItem="eXm-hu-ATg" secondAttribute="trailing" constant="11" id="XF5-W2-Jmy"/>
-                            <constraint firstItem="eXm-hu-ATg" firstAttribute="top" secondItem="thd-id-r2g" secondAttribute="bottom" constant="33" id="gLm-fT-YFc"/>
-                            <constraint firstItem="2bR-kc-gt1" firstAttribute="leading" secondItem="epg-Pg-z4M" secondAttribute="leading" id="jNC-Dn-fcG"/>
-                            <constraint firstItem="2bR-kc-gt1" firstAttribute="leading" secondItem="X6W-QT-gdH" secondAttribute="leading" constant="142" id="lis-bh-hmP"/>
-                            <constraint firstItem="Q1o-3D-Sxc" firstAttribute="leading" secondItem="Riu-Uc-vc1" secondAttribute="leadingMargin" id="pCz-mF-SdH"/>
-                            <constraint firstItem="Q1o-3D-Sxc" firstAttribute="top" secondItem="thd-id-r2g" secondAttribute="bottom" constant="41" id="qIa-Ke-Pzd"/>
-                            <constraint firstItem="6dX-RR-1VV" firstAttribute="leading" secondItem="X6W-QT-gdH" secondAttribute="leading" constant="15" id="uUW-bC-5de"/>
-                            <constraint firstItem="epg-Pg-z4M" firstAttribute="top" secondItem="2bR-kc-gt1" secondAttribute="bottom" constant="8" id="w8a-qd-cDG"/>
+                            <constraint firstItem="thd-id-r2g" firstAttribute="bottom" secondItem="LYI-Tl-2yH" secondAttribute="bottom" id="05W-0o-VRj"/>
+                            <constraint firstItem="2bR-kc-gt1" firstAttribute="leading" secondItem="epg-Pg-z4M" secondAttribute="leading" id="260-cg-GN5"/>
+                            <constraint firstItem="thd-id-r2g" firstAttribute="leading" secondItem="X6W-QT-gdH" secondAttribute="leading" constant="56" id="4oQ-H2-T8V"/>
+                            <constraint firstItem="epg-Pg-z4M" firstAttribute="top" secondItem="2bR-kc-gt1" secondAttribute="bottom" constant="8" id="8Zz-hF-BLF"/>
+                            <constraint firstItem="2bR-kc-gt1" firstAttribute="leading" secondItem="X6W-QT-gdH" secondAttribute="leading" constant="142" id="8uo-CL-82n"/>
+                            <constraint firstItem="RbL-lh-n3m" firstAttribute="centerX" secondItem="Riu-Uc-vc1" secondAttribute="centerX" id="BXI-8i-aA5"/>
+                            <constraint firstItem="2bR-kc-gt1" firstAttribute="top" secondItem="eHs-jB-soJ" secondAttribute="bottom" constant="52" id="D15-RV-j9c"/>
+                            <constraint firstItem="thd-id-r2g" firstAttribute="trailing" secondItem="eHs-jB-soJ" secondAttribute="trailing" id="H8M-2f-eKc"/>
+                            <constraint firstItem="eXm-hu-ATg" firstAttribute="leading" secondItem="2bR-kc-gt1" secondAttribute="leading" id="JPd-NA-aIq"/>
+                            <constraint firstItem="6dX-RR-1VV" firstAttribute="baseline" secondItem="eHs-jB-soJ" secondAttribute="baseline" id="Ph8-cB-ENW"/>
+                            <constraint firstItem="Q1o-3D-Sxc" firstAttribute="leading" secondItem="Riu-Uc-vc1" secondAttribute="leadingMargin" id="Qbo-LG-5TO"/>
+                            <constraint firstItem="X6W-QT-gdH" firstAttribute="bottom" secondItem="epg-Pg-z4M" secondAttribute="bottom" constant="105" id="Qud-tE-Poc"/>
+                            <constraint firstItem="thd-id-r2g" firstAttribute="top" secondItem="LYI-Tl-2yH" secondAttribute="top" id="SOh-JD-UKP"/>
+                            <constraint firstItem="6dX-RR-1VV" firstAttribute="leading" secondItem="X6W-QT-gdH" secondAttribute="leading" constant="15" id="UfY-Y3-XhX"/>
+                            <constraint firstItem="X6W-QT-gdH" firstAttribute="trailing" secondItem="eXm-hu-ATg" secondAttribute="trailing" constant="11" id="X9D-ti-Wbl"/>
+                            <constraint firstItem="X6W-QT-gdH" firstAttribute="trailing" secondItem="LYI-Tl-2yH" secondAttribute="trailing" constant="45" id="a6T-Ls-f1g"/>
+                            <constraint firstItem="eHs-jB-soJ" firstAttribute="leading" secondItem="6dX-RR-1VV" secondAttribute="trailing" constant="31" id="c5V-1z-Kvj"/>
+                            <constraint firstItem="6dX-RR-1VV" firstAttribute="leading" secondItem="6xm-xX-ykG" secondAttribute="leading" id="fnH-ao-YZX"/>
+                            <constraint firstItem="6xm-xX-ykG" firstAttribute="top" secondItem="6dX-RR-1VV" secondAttribute="bottom" constant="76" id="gLP-is-joc"/>
+                            <constraint firstItem="RbL-lh-n3m" firstAttribute="top" secondItem="X6W-QT-gdH" secondAttribute="top" constant="82" id="opN-sg-KEE"/>
+                            <constraint firstItem="thd-id-r2g" firstAttribute="top" secondItem="RbL-lh-n3m" secondAttribute="bottom" constant="55" id="qF5-qH-2mV"/>
+                            <constraint firstItem="Q1o-3D-Sxc" firstAttribute="top" secondItem="thd-id-r2g" secondAttribute="bottom" constant="41" id="sHo-8F-tSm"/>
+                            <constraint firstItem="LYI-Tl-2yH" firstAttribute="leading" secondItem="thd-id-r2g" secondAttribute="trailing" constant="29" id="sea-ln-QQf"/>
+                            <constraint firstItem="eXm-hu-ATg" firstAttribute="top" secondItem="thd-id-r2g" secondAttribute="bottom" constant="33" id="xSQ-cu-in9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o3r-n8-fWN"/>
@@ -298,51 +337,58 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuba Cruise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kb-wq-zOI">
-                                <rect key="frame" x="130" y="30" width="133" height="30"/>
+                                <rect key="frame" x="130" y="71" width="133" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Cuba Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="zuN-Yy-V2Q">
-                                <rect key="frame" x="76" y="170" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="59M-am-PZI"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cuba Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="zuN-Yy-V2Q">
+                                <rect key="frame" x="76" y="170" width="128" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59N-SC-bC0">
                                 <rect key="frame" x="142" y="380" width="235" height="157"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="157" id="3aR-To-IOE"/>
+                                    <constraint firstAttribute="height" constant="157" id="X2J-jD-RYv"/>
                                 </constraints>
                                 <string key="text">Ports in Cuba, such as Havana, Cienfuegos, and Santiago de Cuba, may be included in the itinerary. However, please check for current travel restrictions and regulations regarding Cuba.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Caribbean Cruise" translatesAutoresizingMaskIntoConstraints="NO" id="ptP-5O-Hl2">
+                                <rect key="frame" x="227" y="170" width="135" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="z3g-HS-jBC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rRv-P8-lOV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Pgt-xK-sqv" firstAttribute="leading" secondItem="rSo-2y-mfw" secondAttribute="leading" id="09E-4o-YCU"/>
-                            <constraint firstItem="zuN-Yy-V2Q" firstAttribute="centerX" secondItem="dkn-uy-IYM" secondAttribute="centerX" id="0aR-5u-BIf"/>
-                            <constraint firstItem="59N-SC-bC0" firstAttribute="leading" secondItem="yZ7-3t-Bli" secondAttribute="leading" id="74K-UB-3eI"/>
-                            <constraint firstItem="59N-SC-bC0" firstAttribute="top" secondItem="zuN-Yy-V2Q" secondAttribute="bottom" constant="82" id="9XT-lX-vqY"/>
-                            <constraint firstItem="2kb-wq-zOI" firstAttribute="top" secondItem="rRv-P8-lOV" secondAttribute="top" constant="30" id="AXC-tc-Nvc"/>
-                            <constraint firstItem="yZ7-3t-Bli" firstAttribute="leading" secondItem="yRN-ZQ-pph" secondAttribute="leading" id="DJE-nw-5op"/>
-                            <constraint firstItem="Pgt-xK-sqv" firstAttribute="leading" secondItem="dkn-uy-IYM" secondAttribute="leadingMargin" id="FPK-P1-bRd"/>
-                            <constraint firstItem="59N-SC-bC0" firstAttribute="trailing" secondItem="dkn-uy-IYM" secondAttribute="trailingMargin" id="HOh-JV-vhs"/>
-                            <constraint firstItem="Pgt-xK-sqv" firstAttribute="top" secondItem="zuN-Yy-V2Q" secondAttribute="bottom" constant="90" id="Iq1-Lm-2r4"/>
-                            <constraint firstItem="yRN-ZQ-pph" firstAttribute="leading" secondItem="rRv-P8-lOV" secondAttribute="leading" constant="142" id="Kk8-7k-gSu"/>
-                            <constraint firstItem="yRN-ZQ-pph" firstAttribute="top" secondItem="yZ7-3t-Bli" secondAttribute="bottom" constant="8" id="Nsb-dB-gT0"/>
-                            <constraint firstItem="2kb-wq-zOI" firstAttribute="centerX" secondItem="zuN-Yy-V2Q" secondAttribute="centerX" id="Y3h-dz-Eet"/>
-                            <constraint firstItem="uHZ-Ef-1cm" firstAttribute="top" secondItem="rSo-2y-mfw" secondAttribute="bottom" constant="76" id="Y4J-BX-ub5"/>
-                            <constraint firstItem="uHZ-Ef-1cm" firstAttribute="baseline" secondItem="yZ7-3t-Bli" secondAttribute="baseline" id="a14-Rz-SaV"/>
-                            <constraint firstItem="zuN-Yy-V2Q" firstAttribute="leading" secondItem="rRv-P8-lOV" secondAttribute="leading" constant="76" id="bq1-iF-WwO"/>
-                            <constraint firstItem="Fix-NO-Zbm" firstAttribute="leading" secondItem="rSo-2y-mfw" secondAttribute="trailing" constant="30" id="euo-sO-Efh"/>
-                            <constraint firstItem="rSo-2y-mfw" firstAttribute="leading" secondItem="uHZ-Ef-1cm" secondAttribute="leading" id="kYO-Dp-vdN"/>
-                            <constraint firstItem="rRv-P8-lOV" firstAttribute="bottom" secondItem="yRN-ZQ-pph" secondAttribute="bottom" constant="41" id="vGJ-tx-nhY"/>
-                            <constraint firstItem="zuN-Yy-V2Q" firstAttribute="top" secondItem="dkn-uy-IYM" secondAttribute="top" constant="170" id="yLB-jo-zqh"/>
-                            <constraint firstItem="rSo-2y-mfw" firstAttribute="baseline" secondItem="Fix-NO-Zbm" secondAttribute="baseline" id="zrv-jy-9sW"/>
+                            <constraint firstItem="rRv-P8-lOV" firstAttribute="trailing" secondItem="ptP-5O-Hl2" secondAttribute="trailing" constant="31" id="0ee-Pc-Aqd"/>
+                            <constraint firstItem="yRN-ZQ-pph" firstAttribute="top" secondItem="yZ7-3t-Bli" secondAttribute="bottom" constant="8" id="0qx-cN-TF4"/>
+                            <constraint firstItem="59N-SC-bC0" firstAttribute="leading" secondItem="yZ7-3t-Bli" secondAttribute="leading" id="3f0-cl-SyM"/>
+                            <constraint firstItem="zuN-Yy-V2Q" firstAttribute="trailing" secondItem="yZ7-3t-Bli" secondAttribute="trailing" id="6im-Kk-Gq6"/>
+                            <constraint firstItem="2kb-wq-zOI" firstAttribute="centerX" secondItem="dkn-uy-IYM" secondAttribute="centerX" id="9ha-0q-jZs"/>
+                            <constraint firstItem="59N-SC-bC0" firstAttribute="trailing" secondItem="dkn-uy-IYM" secondAttribute="trailingMargin" id="Fhf-3t-IpO"/>
+                            <constraint firstItem="rRv-P8-lOV" firstAttribute="bottom" secondItem="yRN-ZQ-pph" secondAttribute="bottom" constant="41" id="Ib2-al-bzG"/>
+                            <constraint firstItem="zuN-Yy-V2Q" firstAttribute="top" secondItem="ptP-5O-Hl2" secondAttribute="top" id="IlL-pO-F3W"/>
+                            <constraint firstItem="yZ7-3t-Bli" firstAttribute="leading" secondItem="yRN-ZQ-pph" secondAttribute="leading" id="J51-34-Qhg"/>
+                            <constraint firstItem="zuN-Yy-V2Q" firstAttribute="leading" secondItem="rRv-P8-lOV" secondAttribute="leading" constant="76" id="JMp-k8-QMf"/>
+                            <constraint firstItem="2kb-wq-zOI" firstAttribute="top" secondItem="rRv-P8-lOV" secondAttribute="top" constant="71" id="NgZ-5P-kFq"/>
+                            <constraint firstItem="Fix-NO-Zbm" firstAttribute="leading" secondItem="rSo-2y-mfw" secondAttribute="trailing" constant="30" id="OXL-QI-37M"/>
+                            <constraint firstItem="rSo-2y-mfw" firstAttribute="leading" secondItem="uHZ-Ef-1cm" secondAttribute="leading" id="SrR-ki-8a8"/>
+                            <constraint firstItem="Pgt-xK-sqv" firstAttribute="leading" secondItem="dkn-uy-IYM" secondAttribute="leadingMargin" id="X1q-RA-y17"/>
+                            <constraint firstItem="zuN-Yy-V2Q" firstAttribute="top" secondItem="2kb-wq-zOI" secondAttribute="bottom" constant="69" id="YNq-pb-DZs"/>
+                            <constraint firstItem="uHZ-Ef-1cm" firstAttribute="baseline" secondItem="yZ7-3t-Bli" secondAttribute="baseline" id="ZNV-yi-ZaW"/>
+                            <constraint firstItem="Pgt-xK-sqv" firstAttribute="leading" secondItem="rSo-2y-mfw" secondAttribute="leading" id="dUD-74-2I1"/>
+                            <constraint firstItem="Pgt-xK-sqv" firstAttribute="top" secondItem="zuN-Yy-V2Q" secondAttribute="bottom" constant="90" id="g9j-KH-jT6"/>
+                            <constraint firstItem="rSo-2y-mfw" firstAttribute="baseline" secondItem="Fix-NO-Zbm" secondAttribute="baseline" id="gKo-0J-mVM"/>
+                            <constraint firstItem="59N-SC-bC0" firstAttribute="top" secondItem="zuN-Yy-V2Q" secondAttribute="bottom" constant="82" id="gUY-cG-2Il"/>
+                            <constraint firstItem="zuN-Yy-V2Q" firstAttribute="bottom" secondItem="ptP-5O-Hl2" secondAttribute="bottom" id="kzm-YX-Vbh"/>
+                            <constraint firstItem="ptP-5O-Hl2" firstAttribute="leading" secondItem="zuN-Yy-V2Q" secondAttribute="trailing" constant="23" id="mVT-kh-rNt"/>
+                            <constraint firstItem="uHZ-Ef-1cm" firstAttribute="top" secondItem="rSo-2y-mfw" secondAttribute="bottom" constant="76" id="pIF-7F-aRC"/>
+                            <constraint firstItem="yRN-ZQ-pph" firstAttribute="leading" secondItem="rRv-P8-lOV" secondAttribute="leading" constant="142" id="uJQ-QX-mqM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vKk-Pq-Wcd"/>
@@ -731,9 +777,8 @@ Danang, Vietnam</string>
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gZv-Ld-nBj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gZv-Ld-nBj">
                                 <rect key="frame" x="46" y="167" width="300" height="628"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="7uX-3p-Jft">
                                         <rect key="frame" x="0.0" y="50" width="300" height="100"/>
@@ -790,17 +835,18 @@ Danang, Vietnam</string>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="r11-iB-px2">
+                            <searchBar contentMode="redraw" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="r11-iB-px2">
                                 <rect key="frame" x="0.0" y="123" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="loT-xx-EOT"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="b28-rX-0Cn" id="ZN2-Pq-Cic"/>
                                 </connections>
                             </searchBar>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1hT-dn-qY3">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hT-dn-qY3">
                                 <rect key="frame" x="0.0" y="68" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Search Cruise" id="3JA-HD-iK6"/>
                                 </items>
@@ -808,6 +854,18 @@ Danang, Vietnam</string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ei9-5h-Ajk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1hT-dn-qY3" firstAttribute="leading" secondItem="ei9-5h-Ajk" secondAttribute="leading" id="KfV-U1-XnJ"/>
+                            <constraint firstItem="1hT-dn-qY3" firstAttribute="leading" secondItem="r11-iB-px2" secondAttribute="leading" id="M5G-G1-vtt"/>
+                            <constraint firstItem="gZv-Ld-nBj" firstAttribute="centerX" secondItem="D4K-Qd-S1H" secondAttribute="centerX" id="SPw-NX-WBM"/>
+                            <constraint firstItem="gZv-Ld-nBj" firstAttribute="top" secondItem="r11-iB-px2" secondAttribute="bottom" id="hmN-Bf-5E2"/>
+                            <constraint firstItem="1hT-dn-qY3" firstAttribute="top" secondItem="ei9-5h-Ajk" secondAttribute="top" constant="9" id="kXl-jo-dny"/>
+                            <constraint firstItem="r11-iB-px2" firstAttribute="centerX" secondItem="gZv-Ld-nBj" secondAttribute="centerX" id="mLw-Zm-lJq"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="gZv-Ld-nBj" secondAttribute="bottom" constant="-26" id="mzH-pU-9Wr"/>
+                            <constraint firstItem="gZv-Ld-nBj" firstAttribute="leading" secondItem="ei9-5h-Ajk" secondAttribute="leading" constant="46" id="stU-qu-gbX"/>
+                            <constraint firstItem="1hT-dn-qY3" firstAttribute="trailing" secondItem="r11-iB-px2" secondAttribute="trailing" id="tEC-sY-oDW"/>
+                            <constraint firstItem="r11-iB-px2" firstAttribute="top" secondItem="1hT-dn-qY3" secondAttribute="bottom" constant="11" id="z63-GA-mbv"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="nst-qb-XhK"/>
                     <connections>

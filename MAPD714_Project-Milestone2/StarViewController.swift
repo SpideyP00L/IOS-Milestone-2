@@ -1,27 +1,41 @@
+// StarViewController.swift
+// MAPD714_Project-Milestone2
 //
-//  StarViewController.swift
-//  MAPD714_Project-Milestone2
-//
-//  Created by Jeet Panchal on 2023-10-31.
-//
+// Created by Jeet Panchal on 2023-10-31.
 
 import UIKit
 
 class StarViewController: UIViewController {
     var cruise: Cruise?
 
-    // Connect these outlets to the corresponding labels in the storyboard
+    // MARK: - Outlets
+
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var startDateLabel: UILabel!
     @IBOutlet weak var numberOfNightsLabel: UILabel!
 
+    // MARK: - View Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        setupUI()
+        displayCruiseDetails()
+    }
 
+    // MARK: - UI Setup
+
+    func setupUI() {
+        view.backgroundColor = .white
+        // Add any additional UI setup here
+    }
+
+    // MARK: - Data Display
+
+    func displayCruiseDetails() {
         if let cruise = cruise {
-            placeLabel.text = ""
+            // Update labels with cruise details
+            placeLabel.text = "The Star Cruise is known for its luxury and premium amenities, offering a high-end travel experience. Destinations often include exotic locations worldwide."
             priceLabel.text = "Price: $\(cruise.price)"
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd"
@@ -30,5 +44,4 @@ class StarViewController: UIViewController {
             numberOfNightsLabel.text = "Duration: \(cruise.numberOfNights) nights"
         }
     }
-
 }
