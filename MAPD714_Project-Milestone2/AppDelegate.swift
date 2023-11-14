@@ -1,17 +1,23 @@
 //
 //  AppDelegate.swift
-//  MAPD714_Project-Milestone2
+//  MAPD714_Project-Milestone2// Team number - 8
+// Milestone number - 3
+// Team members names- Calist Dsouza - 301359253, Ahmad Abbas - 301372338 , Jeet Panchal -
+// Submission Date - 30 October 2023
 //
-//  Created by Jeet Panchal on 2023-10-29.
-//
+
+// File: AppDelegate.swift
+// Description: Implements the UIApplicationDelegate methods to handle application-wide events and manage scene sessions.
 
 import UIKit
 
+// MARK: - AppDelegate
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+    // MARK: UIApplicationDelegate Methods
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -30,7 +36,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 

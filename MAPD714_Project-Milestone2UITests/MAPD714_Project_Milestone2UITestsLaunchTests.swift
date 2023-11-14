@@ -2,8 +2,10 @@
 //  MAPD714_Project_Milestone2UITestsLaunchTests.swift
 //  MAPD714_Project-Milestone2UITests
 //
-//  Created by Jeet Panchal on 2023-10-29.
-//
+// Team number - 8
+// Milestone number - 3
+// Team members names- Calist Dsouza - 301359253, Ahmad Abbas - 301372338 , Jeet Panchal -
+// Submission Date - 30 October 2023
 
 import XCTest
 

@@ -1,17 +1,28 @@
 //
 //  SceneDelegate.swift
 //  MAPD714_Project-Milestone2
+// Team number - 8
+// Milestone number - 3
+// Team members names- Calist Dsouza - 301359253, Ahmad Abbas - 301372338 , Jeet Panchal -
+// Submission Date - 30 October 2023
 //
-//  Created by Jeet Panchal on 2023-10-29.
 //
+
+// File: SceneDelegate.swift
+// Description: Implements the UISceneDelegate methods to manage the lifecycle events of the app's scenes.
 
 import UIKit
 
+// MARK: - SceneDelegate
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
+    // MARK: Properties
+    
     var window: UIWindow?
-
-
+    
+    // MARK: UISceneDelegate Methods
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -46,7 +57,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
 }
-

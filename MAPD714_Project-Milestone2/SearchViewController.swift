@@ -2,16 +2,17 @@
 //  SearchViewController.swift
 //  MAPD714_Project-Milestone2
 //
-//  Team Number: 8
-//  Milestone Number: 2
-//  Team Members: Calist Dsouza - 301359253, Ahmad Abbas - 301372338, Jeet Panchal
-//  Submission Date: 30 October 2023
+// Team number - 8
+// Milestone number - 3
+// Team members names- Calist Dsouza - 301359253, Ahmad Abbas - 301372338 , Jeet Panchal -
+// Submission Date - 30 October 2023
 //
 
 import UIKit
 
 // MARK: - Model
 
+// Define the Cruise struct to hold cruise information
 struct Cruise {
     let name: String
     let price: Double
@@ -19,10 +20,12 @@ struct Cruise {
     let numberOfNights: Int
 }
 
+// Define the SearchViewController class
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     // MARK: - Properties
 
+    // Initialize an array to store the list of cruises
     var cruises: [Cruise] = [
         Cruise(name: "Bahamas Cruise", price: 500, startDate: Date(), numberOfNights: 7),
         Cruise(name: "Caribbean Cruise", price: 700, startDate: Date(), numberOfNights: 10),
@@ -31,10 +34,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         Cruise(name: "Star Cruise", price: 800, startDate: Date(), numberOfNights: 12)
     ]
     
+    // Initialize an array to store filtered cruises
     var filteredCruises: [Cruise] = []
     
     // MARK: - Outlets
 
+    // Connect table view and search bar from the storyboard
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -43,15 +48,15 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Assign the delegate and data source
+        // Assign the delegate and data source for the table view and search bar
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
         
-        // Set filtered cruises to all cruises initially
+        // Set the initial filtered cruises to all cruises
         filteredCruises = cruises
         
-        // Register the cell identifier
+        // Register the cell identifier for the table view
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         // Customize the UI design
@@ -60,6 +65,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     // MARK: - UI Customization
 
+    // Set custom UI configurations for the table view and search bar
     func customizeUI() {
         // Customize table view
         tableView.separatorColor = .lightGray
@@ -84,7 +90,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             return searchTextMatches || priceMatches || startDateMatches || numberOfNightsMatches
         }
         
-        tableView.reloadData()
+        tableView.reloadData() // Reload the table view data with the filtered results
     }
 
     // Helper method to format date
@@ -98,26 +104,28 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
 // MARK: - UISearchBarDelegate
 
 extension SearchViewController: UISearchBarDelegate {
+    // Perform actions when the text in the search bar changes
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
             filteredCruises = cruises
         } else {
             filterCruises(for: searchText)
         }
-        tableView.reloadData()
+        tableView.reloadData() // Reload the table view with the filtered results
     }
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
 
 extension SearchViewController {
+    // Define table view delegate and data source methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredCruises.count
+        return filteredCruises.count // Return the number of filtered cruises
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let cruise = filteredCruises[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) // Dequeue reusable cell for the table view
+        let cruise = filteredCruises[indexPath.row] // Retrieve the corresponding cruise from the filtered list
 
         // Customize the cell to display the required information
         cell.textLabel?.text = "\(cruise.name)"
@@ -128,16 +136,18 @@ extension SearchViewController {
         cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 14)
         cell.detailTextLabel?.numberOfLines = 0
 
-        return cell
+        return cell // Return the customized cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120 // Adjust this value as per your requirement
     }
     
+    // Perform actions when a row is selected in the table view
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedCruise = filteredCruises[indexPath.row]
+        let selectedCruise = filteredCruises[indexPath.row] // Get the selected cruise from the filtered list
         
+        // Perform a segue based on the selected cruise's name
         switch selectedCruise.name {
         case "Bahamas Cruise":
             performSegue(withIdentifier: "ShowBahamas", sender: selectedCruise)

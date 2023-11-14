@@ -22,8 +22,11 @@
 		98858BB32AEE24A5004CBB11 /* MAPD714_Project_Milestone2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98858BB22AEE24A5004CBB11 /* MAPD714_Project_Milestone2UITests.swift */; };
 		98858BB52AEE24A5004CBB11 /* MAPD714_Project_Milestone2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98858BB42AEE24A5004CBB11 /* MAPD714_Project_Milestone2UITestsLaunchTests.swift */; };
 		98858BC22AEE2A37004CBB11 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98858BC12AEE2A37004CBB11 /* SearchViewController.swift */; };
+		98894F4E2B017511006A3B97 /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98894F4D2B017511006A3B97 /* GuestViewController.swift */; };
+		98894F502B0186F6006A3B97 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98894F4F2B0186F6006A3B97 /* PaymentViewController.swift */; };
+		98894F522B018719006A3B97 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98894F512B018719006A3B97 /* ReservationViewController.swift */; };
+		98894F562B01E363006A3B97 /* RegisterNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98894F552B01E363006A3B97 /* RegisterNewUserViewController.swift */; };
 		E071A5DC2AF091AC007E5C72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071A5DB2AF091AC007E5C72 /* LoginViewController.swift */; };
-		E071A5DE2AF091C8007E5C72 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071A5DD2AF091C8007E5C72 /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +66,11 @@
 		98858BB22AEE24A5004CBB11 /* MAPD714_Project_Milestone2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPD714_Project_Milestone2UITests.swift; sourceTree = "<group>"; };
 		98858BB42AEE24A5004CBB11 /* MAPD714_Project_Milestone2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPD714_Project_Milestone2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		98858BC12AEE2A37004CBB11 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		98894F4D2B017511006A3B97 /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
+		98894F4F2B0186F6006A3B97 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		98894F512B018719006A3B97 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		98894F552B01E363006A3B97 /* RegisterNewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNewUserViewController.swift; sourceTree = "<group>"; };
 		E071A5DB2AF091AC007E5C72 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E071A5DD2AF091C8007E5C72 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +125,6 @@
 				98858B932AEE24A4004CBB11 /* SceneDelegate.swift */,
 				98858B952AEE24A4004CBB11 /* HomeViewController.swift */,
 				98858B972AEE24A4004CBB11 /* Main.storyboard */,
-				E071A5DD2AF091C8007E5C72 /* RegistrationViewController.swift */,
 				98858B9A2AEE24A5004CBB11 /* Assets.xcassets */,
 				98858B9C2AEE24A5004CBB11 /* LaunchScreen.storyboard */,
 				98858B9F2AEE24A5004CBB11 /* Info.plist */,
@@ -130,6 +135,10 @@
 				981FF8DD2AF0BABD007F0F97 /* CubaViewController.swift */,
 				981FF8DF2AF0BAD4007F0F97 /* SamplerViewController.swift */,
 				981FF8E12AF0BAEA007F0F97 /* StarViewController.swift */,
+				98894F4D2B017511006A3B97 /* GuestViewController.swift */,
+				98894F4F2B0186F6006A3B97 /* PaymentViewController.swift */,
+				98894F512B018719006A3B97 /* ReservationViewController.swift */,
+				98894F552B01E363006A3B97 /* RegisterNewUserViewController.swift */,
 			);
 			path = "MAPD714_Project-Milestone2";
 			sourceTree = "<group>";
@@ -283,12 +292,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				981FF8E22AF0BAEA007F0F97 /* StarViewController.swift in Sources */,
-				E071A5DE2AF091C8007E5C72 /* RegistrationViewController.swift in Sources */,
+				98894F502B0186F6006A3B97 /* PaymentViewController.swift in Sources */,
 				98858B962AEE24A4004CBB11 /* HomeViewController.swift in Sources */,
 				981FF8DE2AF0BABD007F0F97 /* CubaViewController.swift in Sources */,
+				98894F522B018719006A3B97 /* ReservationViewController.swift in Sources */,
 				98858B922AEE24A4004CBB11 /* AppDelegate.swift in Sources */,
 				98858BC22AEE2A37004CBB11 /* SearchViewController.swift in Sources */,
+				98894F562B01E363006A3B97 /* RegisterNewUserViewController.swift in Sources */,
 				981FF8E02AF0BAD4007F0F97 /* SamplerViewController.swift in Sources */,
+				98894F4E2B017511006A3B97 /* GuestViewController.swift in Sources */,
 				E071A5DC2AF091AC007E5C72 /* LoginViewController.swift in Sources */,
 				981FF8DA2AF0BA4B007F0F97 /* BahamasViewController.swift in Sources */,
 				981FF8DC2AF0BA87007F0F97 /* CaribbeanViewController.swift in Sources */,
